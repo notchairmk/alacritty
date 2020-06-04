@@ -356,7 +356,7 @@ pub fn default_key_bindings() -> Vec<KeyBinding> {
         F18,         ~TermMode::VI; Action::Esc("\x1b[32~".into());
         F19,         ~TermMode::VI; Action::Esc("\x1b[33~".into());
         F20,         ~TermMode::VI; Action::Esc("\x1b[34~".into());
-        NumpadEnter, ~TermMode::VI; Action::Esc("\n".into());
+        NumpadEnter, ~TermMode::VI; Action::Esc("\x0d".into());
         Space, ModifiersState::SHIFT | ModifiersState::CTRL, +TermMode::VI; Action::ScrollToBottom;
         Space, ModifiersState::SHIFT | ModifiersState::CTRL; Action::ToggleViMode;
         Escape,                        +TermMode::VI; Action::ClearSelection;
